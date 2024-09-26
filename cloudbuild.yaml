@@ -1,16 +1,3 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/your-image-name', '.']
-
-
-#logsBucket: gs://your-logs-bucket
-
-# 2. 기본 지역 사용자 소유 버킷으로 로그 저장 (선택사항)
-# options:
-#   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
-
-# 3. Cloud Logging에만 로그를 기록 (선택사항)
-logging: CLOUD_LOGGING_ONLY
-
-# 4. 로그를 기록하지 않음 (선택사항)
-#logging: NONE
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/image', '.']
