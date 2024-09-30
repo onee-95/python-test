@@ -1,8 +1,8 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-northeast3/maximizer-test/catnsoup/appsflyer/aos-all:latest', '.']
+    args: ['build', '-t', 'asia-northeast3/maximizer-test-431707/catnsoup/appsflyer/aos-all:latest', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-northeast3/maximizer-test/catnsoup/appsflyer/aos-all:latest']
+    args: ['push', 'asia-northeast3/maximizer-test-431707/catnsoup/appsflyer/aos-all:latest']
 
 options:
   logging: CLOUD_LOGGING_ONLY
