@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the Python script on container startup.
-CMD ["python", "appsflyer-test.py"]
+CMD ["python", "read_and_write.py"]
